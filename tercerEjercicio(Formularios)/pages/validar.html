@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/validar.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <!--CDN de BootStrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--CDN de SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Titulo de la pestaña-->
+    <title>Formularios</title>
+
+    <!--Funciones de JS para validar formularios-->
+    <script>
+
+        function validar(){
+            
+            var pulsado = false;
+            var tipo_hab = document.formulario.opc;
+            var elegido = 0;
+            
+            for(i = 0; i < tipo_hab.length; i++){ 
+                if(tipo_hab[i].checked == true){
+                    pulsado = true;
+                    elegido = i;
+                }
+            }
+            if (pulsado == true){
+                miOpcion = tipo_hab[elegido].value
+                swal("Has elegido la Habitacion: "+ miOpcion +"\n \n El formulario ha sido enviado correctamente");
+            }
+            else{
+                swal("Oops!","No has elegido ninguna habitacion. \n \n Elegi un tipo de habitacion para tu reserva para que el formulario pueda ser enviado.");
+                return false;
+            }
+
+            var opcion = document.formulario.condiciones;
+            if(opcion.checked == true){
+                miOpcion = tipo_hab[elegido].value
+                swal("Has elegido la habitacion: "+ miOpcion +" \n \n El formulario ha sido enviado exitosamente");
+            }
+            else{
+                swal("Oops!","El formulario no ha podido ser enviado. \n \n Debes aceptarse los terminos y las condiciones","error");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--Encabezado-->
+    <header>
+        <img class="logo" src="images/form.png" alt="Logo Fomulario">
+        <h1 class="titulo">FORMULARIOS DE ENTRADA</h1>
+    </header>
+    
+    <!--Contenido-->
+
+    <div class="contenido">
+
+        <form name="formulario" class="contenidoFormulario" onsubmit="return validar()">
+            
+            <div class="tituloForm">
+                <h2>Validacion de Fomularios</h2>
+            </div>
+
+            <div class="entrada1">
+                <label for="validationCustom01" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="validationCustom01" required> 
+                <span class="span1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                </span>
+            </div>
+            
+            
+           
+            <div class="entrada1">
+                <label label for="validationCustom01" class="form-label">Correo Electronico</label>
+                <input type="email"class="form-control" id="validationCustom01" required>
+                <span class="span1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                </span>
+            </div>
+
+            
+            <div class="entrada2">
+                <label class="seleccion">Selecciona el tipo de habitacion</label>
+                
+                <div class="opciones">
+                    <div>
+                        <label>
+                            <input type="radio" name="opc" value="Sencilla">
+                            <span>Sencilla</span>
+                        </label>
+                    </div>
+                
+                    <div>
+                        <label>
+                            <input type="radio" name="opc" value="Doble">
+                            <span>Doble</span>
+                        </label>
+                    </div>
+                
+                    <div>
+                        <label>
+                            <input type="radio" name="opc" value="Familiar">
+                            <span>Familiar</span>
+                        </label>
+                    </div>
+                
+                </div>
+
+            </div>
+
+            <div class="entrada3">
+                <input type="checkbox" name="condiciones" value="aceptado" placeholder="Acepto terminos y condiciones"><span class="spanTerminos">Acepto terminos y condiciones</span><br><br>
+            </div>
+
+            <div class="contenedorBoton">
+                <input class="boton" type="submit" value="Ingresar">
+            </div>
+
+        </form>
+    </div>
+
+    <!--Menu de navegacion-->
+
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">Home Page</a></li>
+            <li><a href="entradas.html">Form Entradas</a></li>
+            <li><a href="registro.html">Form Registro</a></li>
+            <li><a href="login.html">Form Login</a></li>
+            <li><a href="busquedas.html">Form Busquedas</a></li>
+            <li><a class="activo" href="validar.html">Form Validaciones</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

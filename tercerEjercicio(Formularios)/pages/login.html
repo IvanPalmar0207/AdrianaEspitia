@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <!--CDN de BootStrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--CDN de SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Titulo de la pestaña-->
+    <title>Formularios</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Funciones de JS para validar formularios-->
+    <script>
+        function validar(){
+            
+
+            var contraseña = document.formulario.contraseña.value;
+
+            let mayusculas = /[1-99999999999999]/g
+
+            let encontrarMayusculas = contraseña.match(mayusculas)
+            
+            if(encontrarMayusculas){
+                alert("Hay mayusuculas en la contraseña")
+                return false
+            }   
+            else{
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Bienvenido',
+                    text: 'Bienvenido, has sido registrado en Lions Gate Hospital',
+                    confirmButtonText: "Siguiente",
+                    allowEnterKey:true,
+                    allowOutsideClick:false,
+                    timer:10000,
+                    timerProgressBar:true,
+                    confirmButtonColor:" green"
+                  }) 
+                return true
+            }
+        }
+
+            
+    </script>
+</head>
+
+<body>
+
+    <!--Encabezado-->
+    <header>
+        <img class="logo" src="images/form.png" alt="Logo Fomulario">
+        <h1 class="titulo">FORMULARIOS DE LOG-IN</h1>
+    </header>
+    
+    <!--Contenido-->
+
+    <div class="contenido">
+
+        <form name="formulario" class="contenidoFormulario" onsubmit="return validar()">
+            
+            <div class="tituloForm">
+                <h2 class="tituloRegs">Inicio de Sesion</h2>
+            </div>
+
+            <div class="entrada1">
+                <label for="validationCustom01" class="form-label">Numero de Documento</label>
+                <input type="text" class="form-control" id="validationCustom01" required> 
+                <span class="span1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                </span>
+            </div>
+            
+            
+           
+            <div class="entrada1">
+                <label label for="validationCustom01" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="contraseña" id="validationCustom01" required>
+                <span class="span1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                </span>
+            </div>
+
+
+            <div class="contenedorBoton">
+                <input class="boton" type="submit" value="Ingresar">
+            </div>
+            
+        </form>
+    </div>
+
+    <!--Menu de navegacion-->
+
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">Home Page</a></li>
+            <li><a href="entradas.html">Form Entradas</a></li>
+            <li><a href="registro.html">Form Registro</a></li>
+            <li><a class="activo"   href="login.html">Form Login</a></li>
+            <li><a href="busquedas.html">Form Busquedas</a></li>
+            <li><a href="validar.html">Form Validaciones</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

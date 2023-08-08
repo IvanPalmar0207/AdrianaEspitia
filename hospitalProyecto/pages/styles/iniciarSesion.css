@@ -1,0 +1,251 @@
+/*
+    Tipos de letra
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Exo+2:wght@300&display=swap');
+
+/*
+    Estilos generales
+*/
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(31, 62, 99);
+    display:flex;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/prueba.jpg");
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(31, 62, 99);
+    display:flex;
+    color: rgb(61, 174, 240);
+    font-weight: bold;
+}
+
+/*
+    Encabezado
+*/
+.contenidoHeader{
+    display: flex;
+}
+
+.contenedorEncabezado{
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 90px;
+    margin: 40px 40px 40px 90px;
+}
+
+.tituloEncabezado{
+    position: relative;
+    display: flex;
+    font-size: 350%;
+    font-weight: bold;
+    width: 600px;
+    margin: 40px;
+    margin-left: 500px;
+    font-family: 'Assistant', sans-serif;
+    color: rgb(61, 174, 240);
+}
+
+.imagenDerecha{
+    width: 10%;
+    height: 90px;
+    margin: 20px 20px 20px 90px;
+    padding-left: 115px ;
+    padding-top: 17px;
+    position: relative;
+}
+
+.imagenDerecha img{
+    width: 100px;
+    height: 100px;
+    opacity: 2;
+    border-radius: 50%;
+}
+
+/*
+    Formulario de inicio de sesion
+*/
+
+.contenido{
+    padding: 50px 80px 50px 80px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/hospital.jpg);
+}
+
+form{
+    padding: 0px;
+}
+
+.contenidoFormulario{
+    background-color: rgb(30, 126, 181);
+    padding: 30px 30px 5px 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 50px;
+}
+
+.entrada1 input{
+    text-align: center;
+    font-size: 105%;
+}
+
+.entrada1 label{
+    font-size: 120%;
+}
+
+.tituloForm{
+    font-weight: bold;
+    box-sizing: border-box;
+    margin: 0px 0px 25px 0px;
+    text-align: center;
+}
+
+.tituloForm .tituloInicio{
+    font-size: 37px;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(210, 238, 250);
+    font-weight: bold;
+}
+
+.entrada1{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 14px;
+    font-family: 'Assistant', sans-serif;
+    color: rgb(184, 226, 252);
+}
+
+.entrada1 .span1{
+    position: absolute;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.entrada1 :valid{
+    border: 1px solid green;
+}
+
+.entrada1 :invalid + .span1{
+    color: red;
+    
+}
+
+.entrada1 :valid + .span1{
+    color: green;
+}
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorBoton .boton{
+    background-color:  rgb(78, 190, 255);
+    color: rgb(255, 255, 255);
+    width: 35%;
+    height: 35px;
+    transition: 0.2s ease;
+    opacity: 0.8;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.contenedorBoton .boton:hover{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.tenerCuenta{
+    width: 100%;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.tenerCuenta a{
+    color: white;
+    text-decoration: underline;
+    font-family: 'Assistant', sans-serif;
+    font-size: 100%;
+}
+
+.tenerCuenta a:hover{
+    color: #c2ecff;
+}
+
+/*
+    Pie de Pagina
+*/
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 240%;
+    font-family: 'Assistant', sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 0.2s ease-out;
+    margin-top: -10px;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-out;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: rgb(109, 216, 255);
+    border: 2px solid  black;
+}
+
+.iconos-redes-sociales a:hover i{
+    color:black;
+}
+
+.derechos-de-autor{
+    font-size: 15px;
+    color: #ffffff;
+    padding: 20px;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Etiquetas Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web sobre toda la logistica medica que se puede encontrar en un hospital, en este caso el hospital sera de Lions Gate Hospital.">
+    <!--Links de estilos y de iconos (CSS)-->
+    <link rel="shortcut icon" href="/images/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styleIndex/styles.css">
+    <!--CDN BootStrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!--CDN BootStrap 5 Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Titulo de la pestaña-->
+    <title>Lions Gate Hospital</title>
+</head>
+<body>
+    <!--Encabezado-->
+    
+    <header>
+        <div class="contenedorEncabezado">
+            <img src="/images/favIcon.png" alt="IconoEncabezado">
+        </div>
+        
+        <div class="tituloEncabezado">
+            LIONS GATE HOSPITAL
+        </div>
+
+        <div class="botonesEncabezado">
+            <a href="/pages/registrarse.html" class="botonE1">Registrarse</a>
+            <a href="/pages/iniciarSesion.html" class="botonE">IniciarSesion</a>
+        </div>
+    </header>
+
+    <!--Menu de Navegacion-->
+
+    <div class="menu">
+        <ul>
+            <li><a class="activo" href="#">Descubre Lions</a></li>
+            <li><a href="#">Servicios Lions</a></li>
+            <li><a href="#">Recursos Lions</a></li>
+            <li><a href="#">Ubicación Lions</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+    </div>
+
+    <!--Contenido de la pagina-->
+
+    <section>
+        
+        <div class="contenido">
+            <!--Descripcion Lions Gate Hospital-->
+            <div class="tituloContenido">
+                <h1 class="contenidoH1">LIONS GATE HOSPITAL</h1>
+            </div>
+            
+            <form class="d-flex barraBuscar" name="barraBuscar" >
+                <input class="form-control me-2 barra" id="barra" type="search" placeholder="Mas informacion..." aria-label="Search">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn" onclick="buscar()">Buscar</a>
+            </form>
+
+            <div class="imagenNumero1">
+                <img src="/images/hospital.jpg" alt="ImagenDerecha">
+            </div>
+
+            <div class="textoDescripcion">
+                <p>El Hospital Lions Gate, también conocido como LGH, es una destacada institución de atención médica ubicada en 
+                    North Vancouver, Columbia Británica, Canadá. Es uno de los principales hospitales dentro de la autoridad de Salud de 
+                    la Costa de Vancouver (VCH), sirviendo a una amplia población en la región. 
+                    <br> El hospital recibe su nombre del Puente 
+                    Lions Gate, que conecta Vancouver con la costa norte y atraviesa el Burrard Inlet, cerca de su ubicación.
+                    Establecido en 1961, el Hospital Lions Gate tiene una rica historia de proporcionar servicios médicos integrales a la 
+                    comunidad local y más allá. Con el tiempo, ha evolucionado en un importante centro de atención aguda, ofreciendo una 
+                    amplia gama de especialidades médicas y tecnologías de vanguardia para brindar la mejor atención médica posible a sus 
+                    pacientes.
+                    <br>
+                    El Hospital Lions Gate está conformado por un equipo capacitado de médicos, enfermeras, especialistas y personal de apoyo
+                    que trabajan juntos para brindar una atención compasiva y de alta calidad a los pacientes. Se esfuerza constantemente por 
+                    mejorar sus servicios, adaptarse a las cambiantes necesidades de atención médica y mantenerse a la vanguardia de la innovación
+                    médica en la región. Como pilar de la atención médica en North Vancouver, el Hospital Lions Gate sigue comprometido a servir a 
+                    la comunidad y mejorar la salud y el bienestar de sus pacientes.
+                    <br>
+                </p>
+            </div>
+
+            <!--Servicios Incluidos-->
+
+            <div class="tituloServicios">
+                <h1 class="tituloServiciosCont">SERVICIOS INCLUIDOS</h1>
+            </div>
+
+            <div class="accordion serviciosIncluidos" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <span class="textoAcordion">Especialidades médicas</span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <b>LGH</b> ofrece una amplia gama de especialidades médicas para atender diversas necesidades de atención médica. Su equipo de profesionales altamente calificados y especializados trabaja en colaboración para brindar una atención integral y personalizada a los pacientes. Entre las especialidades destacadas se incluyen:
+                        <br>
+                        <br>
+                        <b>Medicina de emergencia:</b> El departamento de emergencias opera las 24 horas del día, los 7 días de la semana, y cuenta con personal médico capacitado para atender casos críticos y de urgencia, garantizando una respuesta rápida y efectiva ante situaciones médicas agudas.
+                        <br>
+                        <br>
+                        <b>Cirugía:</b> El hospital realiza una amplia variedad de procedimientos quirúrgicos, desde cirugías de rutina hasta intervenciones complejas. Cuenta con quirófanos bien equipados y un equipo de cirujanos experimentados.                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="textoAcordion">Departamento de emergencias</span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El departamento de emergencias es uno de los pilares fundamentales de LGH, ya que brinda atención médica crítica las 24 horas del día, los 7 días de la semana. Equipado con tecnología avanzada y un equipo multidisciplinario de médicos, enfermeras y personal de apoyo, el departamento de emergencias está preparado para atender cualquier situación de emergencia médica que se presente.                    
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="textoAcordion">Cuidados intensivos</span>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lions Gate Hospital cuenta con unidades de cuidados intensivos (UCI) que ofrecen atención especializada y monitoreo constante para pacientes gravemente enfermos o que se están recuperando de cirugías complejas. El personal altamente capacitado de la UCI está equipado para manejar condiciones médicas críticas y proporcionar un cuidado intensivo en un entorno seguro y controlado.                    
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <span class="textoAcordion">Maternidad y pediatría</span>
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        El hospital ofrece servicios de maternidad y pediatría para atender las necesidades de las mujeres embarazadas y los niños. El equipo de maternidad brinda atención prenatal, asistencia durante el parto y atención postnatal para garantizar un embarazo saludable y un nacimiento seguro. Además, los especialistas en pediatría están dedicados a la salud y el bienestar de los niños y adolescentes, proporcionando diagnóstico y tratamiento de enfermedades pediátricas.                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <span class="textoAcordion">Cuidados oncológicos</span>
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        La unidad de oncología del Hospital Lions Gate está comprometida con la detección temprana, el tratamiento y el cuidado de pacientes con cáncer. Los equipos de oncología trabajan en estrecha colaboración para brindar terapias personalizadas y apoyo emocional a los pacientes y sus familias durante su lucha contra el cáncer.                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+            <!--Reviews LGH-->
+
+            <div class="contenedorReviews">
+                <h1 class="reviewsLions">RECURSOS LIONS</h1>
+            </div>
+
+            <div class="contenedorCards">
+                <div class="card carta bf-primary">
+                    <div class="card-body">
+                      <h5 class="card-title">TIEMPO DE ESPERA</h5>
+                      <img src="/images/relojHospital.jpg" alt="TiempoEspera">
+                    </div>
+                    <ul class="list-group list-group-flush lista">
+                      <li class="list-group-item">Variabilidad en la Duracion</li>
+                      <li class="list-group-item">Esperas Programadas</li>
+                      <li class="list-group-item">Citas Programadas</li>
+                    </ul>
+                  </div>
+
+                  <div class="card carta">
+                    <div class="card-body">
+                      <h5 class="card-title">CALIDAD DE ATENCION</h5>
+                      <img src="/images/atencion.jpg" alt="AtencionCalidad">
+                    </div>
+                    <ul class="list-group list-group-flush lista">
+                      <li class="list-group-item">Competencia y experiencia</li>
+                      <li class="list-group-item">Seguridad del Paciente</li>
+                      <li class="list-group-item">Comunidad Efectiva</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="card carta">
+                    <div class="card-body">
+                      <h5 class="card-title">LIMPIEZA Y COMODIDADES</h5>
+                      <img src="/images/limpieza.jpg" alt="LimpiezaHospital">
+                    </div>
+                    <ul class="list-group list-group-flush lista">
+                      <li class="list-group-item">Limpieza y Mantenimiento</li>
+                      <li class="list-group-item">Acceso al agua potable</li>
+                      <li class="list-group-item">Control de infecciones</li>
+                    </ul>
+                  </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Pie de Pagina-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <p class="text-center footer-texto">CONTACT US</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="mailto:palmar.ivan0205@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Ivan David Palmar Martinez (8/6/2023) &#169;</div> 
+    </footer>
+
+    <!--Links de Java Script (JS)-->
+    <script src="/JS/index.js"></script>
+
+</body>
+</html>
