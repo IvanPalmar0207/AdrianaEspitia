@@ -53,7 +53,7 @@ footer{
     font-weight: bold;
     width: 600px;
     margin: 40px;
-    margin-left: 495px;
+    margin-left: 505px;
     font-family: 'Assistant', sans-serif;
     color: rgb(61, 174, 240);
 }
@@ -61,8 +61,8 @@ footer{
 .imagenDerecha{
     width: 10%;
     height: 90px;
-    margin: 20px 20px 20px 90px;
-    padding-left: 115px ;
+    margin: 20px 20px 20px 0px;
+    padding-left: 225px ;
     padding-top: 17px;
     position: relative;
 }

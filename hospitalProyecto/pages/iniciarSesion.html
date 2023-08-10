@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina web sobre toda la logistica medica que se puede encontrar en un hospital, en este caso el hospital sera de Lions Gate Hospital.">
     <!--Links de estilos y de iconos (CSS)-->
-    <link rel="shortcut icon" href="/images/favIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/pages/styles/iniciarSesion.css">
+    <link rel="shortcut icon" href="images/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/iniciarSesion.css">
     <!--CDN BootStrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!--CDN BootStrap 5 Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Links de Java Script (JS)-->
-    <script src="/javaScript/index.js"></script>
+    <script src="javaScript/index.js"></script>
     <!--Titulo de la pestaña-->
     <title>Lions Gate Hospital</title>
 </head>
@@ -23,7 +23,7 @@
     
     <header>
         <div class="contenedorEncabezado">
-            <img src="/images/favIcon.png" alt="IconoEncabezado">
+            <img src="images/favIcon.png" alt="IconoEncabezado">
         </div>
         
         <div class="tituloEncabezado">
@@ -31,14 +31,14 @@
         </div>
         
         <div class="imagenDerecha">
-            <img src="/pages/images/logoHospital.jpg" alt="LogoLGH">
+            <img src="images/logoHospital.jpg" alt="LogoLGH">
         </div>
     </header>
 
     <!--Formulario de incio de sesion-->
     <div class="contenido">
 
-        <form name="formulario" class="contenidoFormulario" onsubmit="return validar()">
+        <form action="../index.html" name="formulario" class="contenidoFormulario" onsubmit="return validar()">
             
             <div class="tituloForm">
                 <h2 class="tituloInicio">INGRESAR A LIONS</h2>
@@ -57,8 +57,8 @@
             
            
             <div class="entrada1">
-                <label for="validationCustom01" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" name="contraseña" id="validationCustom01" required>
+                <label for="validationCustom02" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="contraseña" id="validationCustom02" required>
                 <span class="span1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="tenerCuenta">
-                <p><a href="/pages/registrarse.html">Registrate</a></p>
+                <p><a href="registrarse.html">Registrate</a></p>
             </div>
 
             
@@ -104,7 +104,7 @@
     <!--CDN de SweetAlert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Link de Java Script (JS)-->
-    <script src="/pages/javaScript/iniciarSesion.js"></script>
+    <script src="javaScript/iniciarSesion.js"></script>
 
 </body>
 </html>
