@@ -1,0 +1,618 @@
+ /*
+    Tipografia
+*/
+        
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+/*
+    Estilos Generales
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+        Permite incluir el relleno y el borde en el ancho y en la altura de un elemento, en este caso de todo
+    */
+}
+
+html{
+    scroll-behavior: smooth;
+    /*
+        Esta es una propiedad que define si animar suavemente el desplazamiento
+        en lugar de un salto directo. 
+    */
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+}
+
+.bloque{
+    width: 100vw;
+    padding-top: 50px;
+    flex-shrink: 0;
+    height: 100vh;
+}
+
+/*
+    Menu de Navegacion
+*/
+
+header{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(234, 255, 180);
+}
+
+header a{
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    margin: 0 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    font-size: 24px;
+}
+
+header span{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 0px;
+}
+
+.iconoMenu{
+    width: 40px;
+    height: 40px;
+}
+
+.selected{
+    color: rgb(126, 176, 0);
+    transition: .3s;
+}
+
+/*
+    Seccion de Inicio
+*/
+
+#intro{
+    background-image: url(../images/Fondo.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .contenido h1{
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    color: rgb(137, 182, 25);
+    text-shadow: 3px 3px 10px black;
+    animation: 3s aparecer forwards;
+    padding-bottom: 80px;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+/*
+    Formulario de Inicio de sesion
+*/
+
+#intro .formularioIntro{
+    width: 100%;
+    margin-top:10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#intro .formularioIntro form{
+    width: 470px;
+    margin-top: -50px;
+    background-color: rgb(255, 255, 255);
+    padding:15px 25px 45px ;
+    border-radius: 20px;
+}
+
+#intro .formularioIntro form h2{
+    font-size: 2rem;
+    color: rgb(137, 182, 25);
+    font-family: 'Oswald',sans-serif;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+#intro .formularioIntro form .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+#intro .info input{
+    width: 45%;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#intro .info .btnEnviar{
+    width: 35%;
+    height: 30px;
+    font-size: 1.4rem;
+    font-family: 'Oswald',sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(137, 182, 25);
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    margin-left: 32%;
+}
+
+#intro .btnEnviar:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*
+    Seccion Servicios
+*/
+
+#servicios {
+    
+    background-image: url(../images/fondoServicios.jpg);
+    background-size: cover;
+}
+ 
+#servicios .item h2 {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-family: 'Oswald',sans-serif;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+ 
+#servicios .titulo h2 {
+    font-size: 3rem;
+    color: rgb(137, 182, 25);
+    font-family: 'Oswald',sans-serif;
+    padding: 0px 20px 0px 20px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#servicios .contenido {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+#servicios .Servicio1 {
+    background-image: url(../images/sBar.jpg);
+}
+ 
+#servicios .Servicio2 {
+    background-image: url(../images/sRestaurante.jpg);
+}
+ 
+#servicios  .Servicio3 {
+    background-image: url(../images/sSPA.jpg);
+}
+ 
+#servicios .Servicio4 {
+    background-image: url(../images/sPiscina.jpg);
+}
+ 
+#servicios  .Servicio5 {
+    background-image: url(../images/sRS.jpg);
+}
+
+/*
+    Configuracion para la acordeon
+*/
+
+#servicios .item {
+    width: 25%; /*el contenedor item pasa de 25% ancho con hover a 90% de ancho*/
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+ 
+#servicios .item:hover {
+    width: 90%;
+}
+ 
+#servicios  .overlay {
+    position: absolute;
+    background: linear-gradient(to bottom, transparent 80%, black);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+#servicios .item .titulo {
+    position: absolute;
+    bottom: -10px;
+    letter-spacing: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e7e7dd;
+    padding: 10px 0;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+ 
+#servicios .item:hover .titulo {
+    bottom: -20px;
+    opacity: 1;
+}
+
+#servicios a{
+    text-decoration: none;
+}
+
+/*
+    Seccion de reservas
+*/
+
+#reservas{
+    display: flex;
+    margin-top: -80px;
+    align-items: center;
+    background: url(../images/fondoReservas.jpg);
+    background-size: cover;
+}
+
+#reservas .contenido{
+    background-color: rgb(255, 255, 247);
+    border-radius: 20px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#reservas .titulo h2{
+    width: 10%;
+    font-size: 2.5rem;
+    color: rgb(137, 182, 25);
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+#reservas .item h2 {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-family: 'Oswald',sans-serif;
+    text-align: center;
+}
+
+#reservas .contenido1{
+    width: 50%;
+    margin-left: -90px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3rem;
+}
+
+#reservas .contenido2{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+#reservas .clausulas {
+    background-image: url(../images/clausulas.jpg);
+}
+ 
+#reservas .condiciones {
+    background-image: url(../images/condicionesPago.jpg);
+}
+ 
+#reservas  .Servicio1 {
+    background-image: url(../images/hotelServicios.jpg);
+}
+
+/*
+    Configuracion para la acordeon
+*/
+
+#reservas .item {
+    width: 30%; /*El contenedor item pasa de % ancho con hover a 90% de ancho*/
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+ 
+#reservas .item:hover {
+    width: 90%;
+}
+ 
+#reservas  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+#reservas .item .titulo {
+    position: absolute;
+    bottom: -10px;
+    letter-spacing: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e7e7dd;
+    padding: 10px 0;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+ 
+#reservas .item:hover .titulo {
+    bottom: -20px;
+    opacity: 1;
+}
+
+#reservas a{
+    text-decoration: none;
+}
+
+/*
+    Seccion de contactos
+*/
+
+#contactos{
+    width: 100%;
+    background-image: url(../images/fondoContacto.jpg);
+    background-size: cover;
+}
+
+#contactos .contenido{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*
+    Datos de la compañia (Seccion de contactos)
+*/
+
+#contactos .datos{
+    width: 470px;
+    margin-top: -30px;
+    background-color: rgb(255, 255, 255);
+    padding:50px 10px 10px 16px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+#contactos .datos h2{
+    font-size: 2rem;
+    color: rgb(137, 182, 25);
+    font-family: 'Oswald',sans-serif;
+    padding: 20px 20px 0px 20px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+#contactos .datos h3{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+    margin-top: -30px;
+}
+
+#contactos .datos .icono{
+    font-size: 1.9rem;
+    width: 20%;
+    color: rgb(137, 182, 25);
+    padding: 20px 20px 0px 20px;
+}
+
+/*
+    Formulario (Seccion de contactos)
+*/
+
+#contactos .formulario form{
+    width: 470px;
+    margin-top: -30px;
+    background-color: rgb(255, 255, 255);
+    padding:15px 25px 45px ;
+    border-radius: 20px;
+}
+
+#contactos .formulario form h2{
+    font-size: 2rem;
+    color: rgb(137, 182, 25);
+    font-family: 'Oswald',sans-serif;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+#contactos .formulario form .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+#contactos .info input{
+    width: 45%;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contactos .info textarea{
+    width: 45%;
+    border-bottom: 1px solid black;
+    height: 150px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contactos .info .btnEnviar{
+    width: 35%;
+    height: 30px;
+    font-size: 1.4rem;
+    font-family: 'Oswald',sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(137, 182, 25);
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    margin-left: 32%;
+}
+
+#contactos .btnEnviar:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*
+    Seccion de registro
+*/
+
+#registro{
+    width: 100%;
+    background-image: url(../images/fondoRegistro.jpg);
+    background-size: cover;
+}
+
+#registro .contenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#registro .formulario form{
+    width: 470px;
+    margin-top: -30px;
+    background-color: rgb(255, 255, 255);
+    padding:15px 25px 45px ;
+    border-radius: 20px;
+}
+
+#registro .formulario form h2{
+    font-size: 2rem;
+    color: rgb(137, 182, 25);
+    font-family: 'Oswald',sans-serif;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+#registro .formulario form .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+#registro .info input{
+    width: 45%;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#registro .info span{
+    width: 80%;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+
+
+
+    margin-left: -60px;
+}
+
+#registro .info .box{
+    margin-left: -30px;
+    height: 20px;
+}
+
+#registro .info select{
+    width: 45%;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;    
+}
+
+#registro .info .btnEnviar{
+    width: 35%;
+    height: 30px;
+    font-size: 1.4rem;
+    font-family: 'Oswald',sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(137, 182, 25);
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    margin-left: 32%;
+}
+
+#registro .btnEnviar:hover{
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos Propios-->
+    <link rel="stylesheet" href="./styles/paginaPrincipal.css">
+    <!--CDN de Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Icono de la pestaña-->
+    <link rel="shortcut icon" href="./images/logoSena.png" type="image/x-icon">
+    <!--Titulo de la pestaña-->
+    <title>PAGINA PRINCIPAL</title>
+</head>
+<body>
+    <!--Menu-->  
+    <header>
+        <nav>
+            <a href="../index.html" onclick="seleccionar(this)">BLOG-SENA</a>
+            <a href="#intro" onclick="seleccionar(this)"  class="selected">PRINCIPAL</a>
+            <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+            <span>
+                <i class="iconoMenu"><img src="./images/logoSena.png" alt="logoSena" class="iconoMenu"></i>
+            </span>
+            <a href="#reservas" onclick="seleccionar(this)">RESERVAS</a>
+            <a href="#contactos" onclick="seleccionar(this)">CONTACTOS</a>
+            <a href="#registro" onclick="seleccionar(this)">REGISTRO</a>
+        </nav>
+    </header>
+
+    <!--Seccion de introduccion-->
+    
+    <section id="intro" class="bloque">
+        
+        <div class="contenido">
+
+            <div>
+                <h1>La Mejor Estancia en tu Viaje</h1>
+            </div>
+
+            <div class="formularioIntro">
+                <form action="#servicios" method="post">
+                    
+                    <h2>INICIAR SESION</h2>
+                    
+                    <div class="info">
+                        <label>Ingresa tu usuario:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <label>Ingresa tu contraseña:</label>
+                        <input type="password" name="contraseña" id="contraseña">
+                    </div>
+
+                    <div class="info">
+                        <label>Confirmar contraseña:</label>
+                        <input type="password" name="confirmarContraseña" id="confirmarContraseña">
+                    </div>
+
+                    <div class="info">
+                        <input type="submit" value="Enviar" class="btnEnviar">
+                    </div>
+
+                </form>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--Seccion de servicios-->
+
+    <section id="servicios" class="bloque">
+        
+        <div class="titulo">
+            <h2>NUESTROS SERVICIOS</h2>
+        </div>
+        
+        <div class="contenido">
+            
+            <div class="item Servicio1">                
+                <div class="overlay">
+                    <a href="bar.html">
+                        <h2>Bar</h2>
+                    </a>
+                </div>
+            </span>
+            </div>
+
+            <div class="item Servicio2">            
+                <div class="overlay">
+                    <a href="servicios.html">
+                        <h2>Restaurante</h2>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item Servicio3">                
+                <div class="overlay">
+                    <a href="servicios.html">
+                        <h2>SPA</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item Servicio4">            
+                <div class="overlay">
+                    <a href="servicios.html">
+                        <h2>Piscina</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item Servicio5">                
+                <div class="overlay">
+                    <a href="servicios.html">
+                        <h2>Room Service</h2>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Seccion de reservas-->
+
+    <section id="reservas" class="bloque">       
+        <div class="contenido">
+            <div class="titulo">
+                <h2>¿Deseas Reservar?</h2>
+            </div>
+            <div class="contenido1">
+                <p>
+                    Las presentes condiciones generales estan sujetas a lo
+                    dispuesto en la NTSH Sectorial Colombiana 003 (2003-02-24).
+                    <br>
+                    <br>
+                    Esta norma tiene como objeto proporcionar los requisitos 
+                    para ofrecer productos y servicios dando respuesta al cliente,
+                    relaizar el check id y check out de huespedes y reservar habitaciones 
+                    de acuerdo con procedimientos definidos en los establecimientos
+                    de alojamiento y hospedaje.
+               </p>
+            </div>
+            
+            <div class="contenido2">
+                <div class="item clausulas">                
+                    <div class="overlay">
+                        <a href="./clausulas.html">
+                            <h2>Clausulas</h2>
+                        </a>
+                    </div>
+                </div>
+
+              
+                <div class="item condiciones">                
+                    <div class="overlay">
+                        <a href="#reservas">
+                            <h2>Con.Pago</h2>
+                        </a>
+                    </div>
+                </div>
+
+              
+                <div class="item Servicio1">                
+                    <div class="overlay">
+                        <a href="#servicios">
+                            <h2>Servicios</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion de Contactos-->
+
+    <section id="contactos" class="bloque">
+        <div class="contenido">
+            
+            <div class="datos">
+                <div class="item">
+                    <div class="datosDir">            
+                        <h2>Direccion</h2>
+                        <div class="icono">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3>
+                            Calle 13 # 10 - 93, Soacha,
+                            <br>
+                            Cundinamarca</h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="datosTel">
+                        <h2>Telefono</h2>
+                        <div class="icono">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3>(57)-601-5461500</h3>
+                    </div>
+                </div>
+
+                
+                <div class="item">
+                    <div class="datosEmail">
+                        <h2>Email</h2>
+                        <div class="icono">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3>servicioalciudadano@sena.edu.co</h3>
+                    </div>
+                </div>
+
+                
+                <div class="item">
+                    <div class="datosWhat">                    
+                        <h2>WhatsApp</h2>
+                        <div class="icono">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3>3214344449</h3>
+                    </div>
+                </div>
+            </div>
+
+           <div class="formulario">
+                <form action="#intro">
+                    
+                    <h2>Enviar Mensaje</h2>
+                    
+                    <div class="info">
+                        <label>Ingresa tu nombre:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <label>Ingresa tus apellidos:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <label>Ingresa tu email:</label>
+                        <input type="email" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <label>Ingresa tu comentario:</label>
+                        <textarea cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="info">
+                        <input type="submit" value="Enviar" class="btnEnviar">
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion de Registro-->
+
+    <section id="registro" class="bloque">
+        <div class="contenido">
+            <div class="formulario">
+                <form action="#intro">
+                    
+                    <h2>Registrate en el SENA</h2>
+                    
+                    <div class="info">
+                        <label>Ingresa tus nombre/s:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <label>Ingresa tus apellidos:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <label>Ingresa tu email:</label>
+                        <input type="email" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <label>Tipo de documento:</label>
+                        <select>
+                            <option></option>
+                            <option>Cedula de Ciudadania</option>
+                            <option>Cedula de Extranjeria</option>
+                            <option>Pasaporte</option>
+                        </select>
+                    </div>
+
+                    <div class="info">
+                        <label>Nro.Documento:</label>
+                        <input type="text" name="usuario" id="usuario">
+                    </div>
+
+                    <div class="info">
+                        <input class="box" type="checkbox"><span>He leido y acepto las condiciones</span>
+                    </div>
+
+                    <div class="info">
+                        <input type="submit" value="Enviar" class="btnEnviar">
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--JS de la Pagina Principal-->
+    <script src="./JS/paginaPrincipal.js"></script>
+</body>
+</html>
