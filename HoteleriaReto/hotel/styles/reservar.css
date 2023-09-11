@@ -19,7 +19,7 @@ section{
 
 h1{
     font-size: 2.5rem;
-    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*Barra de navegacion*/
@@ -27,7 +27,7 @@ h1{
 .navbar{
     width: 100%;
     padding: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
 .navbar a{
@@ -35,15 +35,19 @@ h1{
     font-size: 1.5rem;
     color: rgb(137, 182, 25);
     margin-left: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar p{
     font-weight: bold;
     margin-top: 10px;
     font-size: 2.5rem;
-    margin-left: 10px;
+    margin-left: -40px;
     font-family: 'Oswald', sans-serif;
+}
+
+.navbar a i{
+    font-size: 3rem;
 }
 
 .navbar-collapse{
@@ -51,63 +55,90 @@ h1{
     justify-content: space-between;
 }
 
-/*Servicios del Hotel*/
+/*Formulario de Registro*/
 
-.serviciosSection{
-   height: 620px; 
-   padding-bottom: 10px;
-   color: black;
-}
-
-.serviciosSection h1{
-    margin-top: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.serviciosSection .contenedor{
-    max-width: 600px;
-    text-align: center;
-}
-
-.serviciosSection p{
-    text-align: center;
-    font-size:1.1rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.serviciosSection img{
-    width: 450px;
-    border-radius: 20%;
-    margin:20px 0px 20px 0px;
-}
-
-.roomService{
-    height: 570px; 
-    padding-bottom: 10px;
-    background-image: url(../images/fondoContacto.jpg);
+.formReservar{
+   height: 650px; 
+   padding: 10px;
+    background: url(../images/sPiscina.jpg);
     background-size: cover;
     color: black;
 }
 
-.roomService .contenedor{
+.formReservar .contenedor{
+    max-width: 600px;
     background-color: white;
-    border-radius: 30px;
     padding: 20px;
-    max-width: 850px;
+    border-radius: 20px;
+    text-align: center;
 }
 
-.roomService .titulo{
-    font-weight: bolder;
-    font-size: 1.5rem;
+.formReservar .campo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 40px 0px 40px;
+    font-size: 1.1rem;
+}
+
+.campo label{
+    width: 50%;
+    text-align: start;
+    font-weight: bold;
+}
+
+.campo input, 
+.campo select{
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.formReservar .boton{
+    width: 28%;
+    height: 30px;
+    background-color:rgb(137, 182, 25);
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.formReservar .boton:hover{
+    opacity: 1;
+}
+
+.formReservar a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.formReservar a:hover{
+    text-decoration: underline;
+}
+
+.formReservar h2{
+    font-size: 2.5rem;
+    margin-left: 20px;
+    color: rgb(137, 182, 25);
     font-family: 'Oswald', sans-serif;
 }
 
-/*Redes Sociales*/
+/*
+    Pie de Pagina
+*/
 
 footer{
     min-height: 250px;
-    color: #0a0a23;
     background-color: white;
+    color: #0a0a23;
 }
 
 .footer-logo{
@@ -144,11 +175,11 @@ footer{
 }
 
 .iconos-redes-sociales a:hover{
-    border: 2px solid  rgb(56, 154, 0)
+    border: 2px solid rgb(137, 182, 25);
 }
 
 .iconos-redes-sociales a:hover i{
-    color: rgb(56, 154, 0);
+    color:  rgb(137, 182, 25);
 }
 
 .derechos-de-autor{
@@ -166,37 +197,18 @@ footer{
     }
     .navbar p{
         font-size: 1.5rem;
-        margin-left: 25%;
+        margin-left: 19%;
         font-weight: bold;
     }
     .navbar a{
         margin-left: 0px;
     }
 
-    .serviciosSection{
-        height: 790px;
-    }
-
-    .serviciosSection{
-        padding: 0px;
-    }
-
-    .serviciosSection p{
-        text-align: justify;
-        font-size: 1.2rem;
-    }
-    
-    .serviciosSection img{
-        width: 250px;
-        border-radius: 20%;
-        margin:20px 0px 20px 0px;
+    .formInicio{
+        height: 450px;
     }
 
     .footer-texto{
         font-size: 1.4rem;
-    }
-
-    .roomService img{
-        height: 190px;
     }
 }

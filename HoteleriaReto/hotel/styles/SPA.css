@@ -58,7 +58,6 @@ h1{
 .serviciosSection{
    height: 620px; 
    padding-bottom: 10px;
-   background-color: #ddffc1;
    color: black;
 }
 
@@ -88,7 +87,8 @@ h1{
     height: 720px; 
     padding-top: 5px;
     padding-bottom: 10px;
-    background-color: #ddffc1;
+    background-image: url(../images/fondoRegistro.jpg);
+    background-size: cover;
     color: black;
 }
 
@@ -99,6 +99,9 @@ h1{
 
 .SPA .contenedor{
     max-width: 850px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
     text-align: center;
 }
 

@@ -68,7 +68,9 @@ h1{
 
 .serviciosSection .contenedor{
     max-width: 600px;
+    background-color: rgb(255, 255, 255);
     text-align: center;
+    border-radius: 20px;
 }
 
 .serviciosSection p{
@@ -84,8 +86,9 @@ h1{
 }
 
 .bar{
-   height: 1150px; 
-   background-color: #ddffc1;
+   height: 1250px; 
+   background-image: url(../images/restauranteNro2.jpg);
+   background-size: cover;
    color: black;   
    padding-bottom: 10px;
 }
@@ -93,7 +96,7 @@ h1{
 .bar .barCards{
     width: 30%;
     margin: 15px 15px 15px 15px;
-    background-color: white;
+    background-color: #f5ffec;
     border-radius: 10px;
     padding: 0px 20px 20px 20px;
 }

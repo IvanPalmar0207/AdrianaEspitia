@@ -56,7 +56,7 @@ h1{
 .serviciosSection{
    height: 620px; 
    padding-bottom: 10px;
-   background-color: #ddffc1;
+   background-color: #ffffff;
    color: black;
 }
 
@@ -86,7 +86,8 @@ h1{
     height: 720px; 
     padding-top: 5px;
     padding-bottom: 10px;
-    background-color: #ddffc1;
+    background-image: url(../images/sSPA.jpg);
+    background-size: cover;
     color: black;
 }
 
@@ -97,6 +98,9 @@ h1{
 
 .piscina .contenedor{
     max-width: 850px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
     text-align: center;
 }
 

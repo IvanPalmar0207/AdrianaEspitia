@@ -27,7 +27,7 @@ h1{
 .navbar{
     width: 100%;
     padding: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #ddffc1;
 }
 
 .navbar a{
@@ -57,19 +57,23 @@ h1{
 
 /*Formulario de Registro*/
 
-.formInicio{
-   height: 350px; 
+.formReservar{
+   height: 650px; 
    padding: 10px;
-   background-color: #ddffc1;
+   background-image: url(../images/sPiscina.jpg);
+   background-size: cover;
    color: black;
 }
 
-.formInicio .contenedor{
+.formReservar .contenedor{
     max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
     text-align: center;
 }
 
-.formInicio .campo{
+.formReservar .campo{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -92,13 +96,13 @@ h1{
     background-color: white;
     height: 30px;
     border: none;
-    border-radius: 20px;
+    border-bottom: 1px solid black;
 }
 
-.formInicio .boton{
+.formReservar .boton{
     width: 28%;
     height: 30px;
-    background-color: white;
+    background-color:rgb(137, 182, 25);
     color: #000;
     font-family: 'Oswald', sans-serif;
     border: none;
@@ -106,19 +110,91 @@ h1{
     opacity: 0.9;
 }
 
-.formInicio .boton:hover{
+.formReservar .boton:hover{
     opacity: 1;
 }
 
-.formInicio a{
+.formReservar a{
     text-decoration: none;
     font-size: 0.9rem;
     color: black;
 }
 
-.formInicio a:hover{
+.formReservar a:hover{
     text-decoration: underline;
 }
+
+.formReservar h2{
+    font-size: 2.5rem;
+    margin-left: 20px;
+    color: rgb(137, 182, 25);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*Servicios del Hotel*/
+
+.serviciosSection{
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    color: black;
+ }
+ 
+ .serviciosSection h1{
+     margin-top: 20px;
+     font-family: 'Oswald', sans-serif;
+ }
+ 
+ .serviciosSection .contenedor{
+     max-width: 500px;
+     text-align: center;
+ }
+ 
+ .serviciosSection p{
+     text-align: center;
+     font-size:1.1rem;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ .serviciosSection img{
+     width: 750px;
+     border-radius: 20%;
+     margin:20px 0px 20px 0px;
+ }
+ 
+ .clausula{
+     height: 1200px; 
+     padding-top: 5px;
+     padding-bottom: 10px;
+     color: black;
+ }
+ 
+ .clausula h1{
+     margin-top: 20px;
+     font-family: 'Oswald', sans-serif;
+ }
+ 
+ .clausula .contenedor{
+     max-width: 60%;
+     background-color: white;
+     border-radius: 20px;
+     text-align: center;
+ }
+ 
+ .clausula p{
+     text-align: justify;
+     font-size:1.1rem;
+     font-family: 'Roboto', sans-serif;
+     margin-top: 20px;
+ }
+ 
+ .clausula img{
+     width: 650px;
+     border-radius: 20%;
+     height: 300px;
+     margin:20px 0px 20px 0px;
+ }
+ 
 
 /*
     Pie de Pagina
@@ -126,8 +202,8 @@ h1{
 
 footer{
     min-height: 250px;
-    color: #0a0a23;
     background-color: white;
+    color: #0a0a23;
 }
 
 .footer-logo{
