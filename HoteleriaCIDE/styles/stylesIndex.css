@@ -1,0 +1,509 @@
+ /*
+    Tipografia
+*/
+        
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+/*
+    Estilos Generales
+*/
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+        
+header,
+footer 
+{
+    display: flex;
+}
+   
+
+body 
+{
+    margin: auto;
+    width: 1330px;
+    background: rgb(255, 255, 255);
+}
+        
+header 
+{
+    width: 1250px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*
+    Encabezado
+*/
+        
+.logo 
+{
+    position: relative;
+    margin-left: 16%;
+    border-radius: 50%;
+}
+        
+.logo:hover 
+{
+    width: 150px;
+}
+        
+.titulo 
+{
+    color: rgb(137, 182, 25);
+    margin-left: 8%;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*
+    Menu de Navegacion
+*/
+        
+nav 
+{
+    width: 100%;
+    background-color: rgb(234, 255, 180);
+    height: 80px;
+    z-index: 2;
+    left: 0;
+    display: inline-block;
+}
+        
+.navegador 
+{
+    z-index: 3;
+}
+        
+.menu li 
+{
+    margin-left: 100px;
+    margin-top: 20px;
+    list-style: none;
+    display: inline-block;
+}
+        
+.menu li a 
+{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+    display: block;
+    margin-left: 0px;
+}
+        
+.subMenu 
+{
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    height: 200px;
+    background: linear-gradient( rgb(234, 255, 180), rgb(248, 255, 186));
+    margin-left: -80px;
+    display: none;
+}
+        
+.subMenu li 
+{
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+}
+        
+.subMenu a 
+{
+    width: 100%;
+}
+        
+.menu :hover
+{
+    color: rgb(137, 182, 25);
+}
+        
+.menu li:hover .subMenu 
+{
+    display: block;
+    border-radius: 20px;
+}
+
+/*
+    Banner Estatico
+*/
+        
+.banner_estatico 
+{
+    display: flex;
+    background-color: rgb(230, 252, 210);
+    background-size: cover;
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 20px;
+    background-image: url("../images/banner3.jpg");
+}
+        
+.tituloBanner 
+{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(137, 182, 25);
+    font-size: 4rem;
+    margin: 50px 40px 40px 70px;
+    text-align: center;
+    font-weight: normal;
+}
+        
+.banner_estatico p 
+{
+    font-size: 1.5rem;
+    margin: 140px 30px 30px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: justify;
+}
+
+/*
+    Seccion de Entidad
+*/
+        
+.contenido 
+{
+    display: table;
+    margin-top: 2%;
+    width: 50%;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+/*
+    Renderizar el acticulo, seccion, h2 y la p
+*/
+        
+.entidad 
+{
+    display: table-cell;
+    padding: 50px 20px 50px 20px;
+}
+
+/*
+    Se fija el conteo de columnas
+*/
+        
+.articulo 
+{
+    column-count: 2;
+    width: 700px;
+    column-gap: 15px;
+}
+        
+.articulo p 
+{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+        
+.articulo img 
+{
+    margin: 20px;
+    width: 280px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+        
+.articulo h2 
+{
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    margin-left: 28px;
+}
+        
+.articulo li 
+{
+    text-align: justify;
+    font-size: 1.3rem;
+    list-style: none;
+    margin: 10px;
+}
+        
+.articulo .aprendices 
+{
+    margin: 20px;
+    width: 280px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(77, 75, 75);
+}
+
+/*
+    Seccion de comentarios
+*/
+        
+.comentarios 
+{
+    display: table-cell;
+    width: 60%;
+    padding-left: 12%;
+}
+        
+.comentarios h2 
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    margin: 30px;
+    color: rgb(137, 182, 25);
+}
+        
+.comentarios article 
+{
+    display: table;
+    width: 800px;
+    margin: 30px;
+    border: white;
+    border-radius: 11px;
+    padding: 21px;
+    padding-left: 40px;
+}
+        
+.comentarios a time 
+{
+    display: table-cell;
+}
+        
+.comentarios p 
+{
+    display: table-cell;
+    padding-left: 100px;
+    width: 550px;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+        
+.comentarios a 
+{
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+        
+.comentarios a:hover 
+{
+    color: rgb(137, 182, 25);
+    text-decoration: none;
+    font-weight: bold;
+}
+        
+.comentarios time 
+{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+        
+.comentarios article:nth-child(odd) 
+{
+    padding: 21px;
+    background-color: #d5d7d2;
+    border: 1px solid #d7d7d7;
+    border-radius: 11px;
+    padding-left: 40px;
+}
+
+/*
+    Formulario de opiniones
+*/
+
+.formularioOpiniones
+{
+    padding-left: 12%;
+}
+
+.formularioOpiniones h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    margin: 30px;
+    color: rgb(137, 182, 25);
+}
+
+.camposFormulario{
+    width: 100%;
+    margin: 60px;
+    margin-left: 13%;
+}
+
+.camposFormulario label{
+    font-weight: bold;
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+}
+
+.camposFormulario p{
+    font-weight: bold;
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+
+.camposFormulario input{
+    width: 55%;
+    height: 26px;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 15px;
+    margin-top: 20px;
+}
+
+.camposFormulario textarea{
+    width: 79.5%;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenedorBtn{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorBtn .btnEnviar{
+    width: 30%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    color: #000;
+    background-color: rgb(181, 211, 104);
+    height: 40px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.contenedorBtn .btnEnviar:hover{
+    opacity: 1;
+}
+
+/*
+    Seccion Lateral
+*/
+
+
+aside{
+    width: 100%;
+    height: auto;
+    margin-left: -55%;
+    background-color: #eef0ec;
+    border-radius: 20px;
+    padding:5px 10px 35px 10px;
+}
+
+aside h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(137, 182, 25);
+    padding-top: 20px;
+}
+
+aside img{
+    margin: 20px 20px 20px 50px;
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(77, 75, 75);
+}
+
+aside a{
+    margin: 50px 50px 50px 70px;
+    text-decoration: none;
+    color: rgb(90, 121, 12);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+aside a:hover{
+    text-decoration: underline;
+}
+
+/*
+    Pie de Pagina
+*/
+
+footer{
+    justify-content: space-around;
+    position: absolute;
+    width: 1330px;
+    height: auto;
+    background-color: rgb(236, 255, 194);
+}
+
+.pie{
+    width: 1330px;
+    padding: 25px 0px 25px 0;
+}
+
+.pie section{
+    display: table;
+    position: relative;
+    width: 280px;
+    text-align:justify;
+}
+
+.pie h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(90, 121, 12);
+    margin-bottom: 30px;
+}
+
+.pie section a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.pie section a:hover{
+    color: rgb(90, 121, 12);
+    text-decoration: underline;
+}
+
+.pie section li{
+    margin-bottom: 20px;
+}
+
+.pie section p{
+    margin-top: 10px;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pie section i{
+    font-size: 2.5rem;
+    margin: 20px 0px 0px 40px;
+}

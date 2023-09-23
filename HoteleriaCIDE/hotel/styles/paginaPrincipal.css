@@ -1,0 +1,157 @@
+ /*
+    Tipografia
+*/
+        
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+/*
+    Barra de navegacion
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+}
+
+.bloque{
+    width: 100vw;
+    padding-top: 50px;
+    flex-shrink: 0;
+    height: 100vh;
+}
+
+header{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+header a{
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    font-size: 24px;
+}
+
+header span{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.iconoMenu{
+    width: 40px;
+    height: 40px;
+}
+
+.selected{
+    color: green;
+    transition: .3s;
+}
+
+#intro{
+    background-image: url(../images/sRestaurante.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .contenido h1{
+    font-size: 4rem;
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 3px 3px 10px black;
+    animation: 3s aparecer forwards;
+    padding-bottom: 80px;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+#intro .formularioIntro{
+    width: 100%;
+    margin-top:10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.formularioIntro form{
+    width: 470px;
+    /*text-align: center;*/
+    background-color: rgb(255, 255, 208);
+    padding:15px 25px 45px ;
+    border-radius: 20px;
+}
+
+.formularioIntro form h2{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Oswald',sans-serif;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+.formularioIntro form .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.info input{
+    width: 45%;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.info .btnEnviar{
+    width: 35%;
+    height: 30px;
+    font-size: 1.2rem;
+    font-family: 'Oswald',sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    margin-left: 32%;
+}
+
+.btnEnviar:hover{
+    opacity: 1;
+    cursor: pointer;
+}

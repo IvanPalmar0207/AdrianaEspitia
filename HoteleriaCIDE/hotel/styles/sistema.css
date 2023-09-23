@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+.bannerDinamico{
+    display: flex;
+    margin-top: 90px;
+    width: 80%;
+    height: 380px;
+}
